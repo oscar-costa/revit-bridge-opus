@@ -84,7 +84,6 @@ revit-opus-bridge/
 
 ```
 revit-opus-bridge/
-── requirements.txt
 │
 ├── extension/                      # pyRevit extension root
 │   └── RevitOpusBridge.extension/
@@ -136,6 +135,7 @@ revit-opus-bridge/
 │   ├── workflow.md
 │   └── manifest.md
 │
+├── requirements.txt
 ├── README.md
 ├── LICENSE
 └── .gitignore
