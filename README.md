@@ -82,6 +82,65 @@ revit-opus-bridge/
 └── .gitignore
 ```
 
+```
+revit-opus-bridge/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── extension/                      # pyRevit extension root
+│   └── RevitOpusBridge.extension/
+│       ├── extension.json         # pyRevit metadata
+│       │
+│       ├── RevitOpus.tab/
+│       │   └── Import.panel/
+│       │       └── ImportOpus.pushbutton/
+│       │           ├── script.py
+│       │           ├── ui.xaml    # optional UI
+│
+├── lib/                           # core logic (importable)
+│   ├── __init__.py
+│   │
+│   ├── extract/
+│   │   ├── __init__.py
+│   │   ├── opux.py
+│   │   └── mdb.py
+│   │
+│   ├── transform/
+│   │   ├── __init__.py
+│   │   └── normalize.py
+│   │
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── manifest.py
+│   │   ├── hash.py
+│   │   └── paths.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── file_utils.py
+│
+├── schemas/                       # JSON schemas (important)
+│   ├── manifest.schema.json
+│   └── budget.schema.json
+│
+├── examples/
+│   ├── sample_manifest.json
+│   └── sample_budget.json
+│
+├── tests/
+│   ├── test_manifest.py
+│   ├── test_hash.py
+│   └── test_normalize.py
+│
+└── docs/
+    ├── architecture.md
+    ├── workflow.md
+    └── manifest.md
+```
+
 ---
 
 ## ⚙️ Installation
