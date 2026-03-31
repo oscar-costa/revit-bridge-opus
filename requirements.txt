@@ -1,0 +1,10 @@
+# Core dependencies
+pyodbc>=4.0.39          # MDB/Access database support (Windows ODBC)
+jsonschema>=4.23.0      # JSON Schema validation
+
+# Testing
+pytest>=8.3.0
+pytest-cov>=5.0.0
+
+# Optional: for development
+pywin32>=306            # Windows COM/win32 APIs (pyRevit environment)
