@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Revit OPUS Bridge Manifest",
+  "type": "object",
+  "required": [
+    "active",
+    "source",
+    "history"
+  ],
+  "properties": {
+    "active": {
+      "type": "string",
+      "description": "Filename of the active budget JSON"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "type",
+        "path",
+        "hash"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            ".opux",
+            ".mdb"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "description": "Absolute path to OPUS file (UNC recommended)"
+        },
+        "hash": {
+          "type": "string",
+          "description": "Hash of the OPUS file used to generate the active JSON"
+        }
+      },
+      "additionalProperties": false
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of generated budget JSON files"
+    }
+  },
+  "additionalProperties": false
+}
