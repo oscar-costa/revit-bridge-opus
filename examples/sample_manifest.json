@@ -1,0 +1,12 @@
+{
+  "active": "presupuesto_2026-03-31_1530.json",
+  "source": {
+    "type": ".opux",
+    "path": "\\\\server\\costs\\projectX\\budget.opux",
+    "hash": "a94f8c3b2d1e4f6a7b8c9d0e12345678"
+  },
+  "history": [
+    "presupuesto_2026-03-31_1015.json",
+    "presupuesto_2026-03-31_1530.json"
+  ]
+}

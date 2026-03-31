@@ -1,0 +1,8 @@
+{
+  "name": "Revit OPUS Bridge",
+  "description": "Imports OPUS cost estimation files (.opux, .mdb) into Revit workflows by converting them into a normalized JSON format.",
+  "author": "Antigravity generated",
+  "version": "1.0.0",
+  "url": "",
+  "repository": ""
+}
