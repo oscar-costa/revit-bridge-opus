@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "id": "GRP-01",
+      "name": "Preliminaries",
+      "parent_id": null
+    },
+    {
+      "id": "GRP-02",
+      "name": "Site Prep",
+      "parent_id": "GRP-01"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "CON-100",
+      "group_id": "GRP-02",
+      "code": "SP-01",
+      "description": "Clearing and grubbing including disposal of debris.",
+      "unit": "m2",
+      "unit_price": 45.50
+    },
+    {
+      "id": "CON-101",
+      "group_id": "GRP-02",
+      "code": "SP-02",
+      "description": "Earthwork excavation, machine driven",
+      "unit": "m3",
+      "unit_price": 120.00
+    }
+  ]
+}
